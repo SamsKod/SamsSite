@@ -1,7 +1,31 @@
 {% extends "booking/base.html" %}
 {% block content %}
 {% for post in posts %}
-    <h1>{{ post.title }}</h1>
-    <p>{{ post.comment }}</p>
+<article class="media content-section">
+    <img class="rounded-circle article-img" src="#">
+    <div class="media-body">
+      <div class="article-metadata">
+        <a class="mr-2">{{ post.title }}</a>
+      </div>
+      <h2><a class="article-title" href="#">{{ post.author }}</a></h2>
+      <p class="article-content">Booked: {{ post.start_date | date:" j" }} - {{ post.end_date | date:" j F, Y" }}</p>
+      {% if post.small_room == True %}
+      <p class="article-content">Small room</p>
+      {% else %}
+      <p class="article-content"></p>
+      {% endif %}
+      {% if post.large_room == True %}
+      <p class="article-content">Large room</p>
+      {% else %}
+      <p class="article-content"></p>
+      {% endif %}
+      {% if post.grand_room == True %}
+      <p class="article-content">Grand room</p>
+      {% else %}
+      <p class="article-content"></p>
+      {% endif %}
+      <p class="article-content">Comments: {{ post.comment }}</p>
+    </div>
+  </article>
 {% endfor %}
 {% endblock content %}
