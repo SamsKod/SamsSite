@@ -2,6 +2,7 @@ body {
     background: #fafafa;
     color: #333333;
     margin-top: 5rem;
+    position: relative;
   }
     
   h1, h2, h3, h4, h5, h6 {
@@ -116,7 +117,7 @@ body {
   .date {
     font-size: 16px;
   }
-  
+
   @media only screen and (max-device-width: 480px) {
     /* styles for small screens*/
     .content-section {
@@ -126,7 +127,65 @@ body {
       font-size: 14px;
     }
 
-    .page-footer {
+    .footer {
         display: none;
       }
+  
+    .account-heading {
+      font-size: 24px;
+    }
+    
+    .text-secondary {
+      font-size: 14px;
+    }
+    
+    .account-img {
+      width: 80px;
+      height: 80px;
+    }
+    
+    .form-group {
+      margin-top: 20px;
+      overflow-wrap: break-word;
+    }
+  }
+
+
+  
+  /* adjust styles for screens between 768px and 992px */
+  @media (min-width: 481px) and (max-width: 991px) {
+   
+    .content-section {
+        width: 90%;
+        margin: 0 auto;
+        padding: 5px 10px;
+        font-size: 14px;
+      }
+
+    .account-heading {
+      font-size: 32px;
+    }
+    
+    .text-secondary {
+      font-size: 16px;
+    }
+    
+    .account-img {
+      width: 100px;
+      height: 100px;
+    }
+    
+    .form-group {
+      margin-top: 30px;
+      overflow-wrap: break-word;
+    }
+
+    .img {
+        width: 100px;
+        height: 50px;
+    }
+  }
+  
+  /* adjust styles for screens larger than 992px */
+  @media (min-width: 992px) {
   }
