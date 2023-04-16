@@ -32,13 +32,14 @@ body {
     
   .content-section {
     width: 75%;
+    margin: 0 auto;
     background: #ffffff;
     padding: 10px 20px;
     border: 1px solid #dddddd;
     border-radius: 3px;
     margin-bottom: 20px;
   }
-
+    
   .article-title {
     color: #444444;
   }
@@ -68,7 +69,7 @@ body {
     color: #333;
     text-decoration: none;
   }
-
+    
   .article-svg {
     width: 25px;
     height: 25px;
@@ -86,3 +87,46 @@ body {
     font-size: 2.5rem;
   }
   
+  .calendar {
+    width: 75%;
+    margin: auto;
+    font-size: 13px;
+  }
+
+  .calendar tr, .calendar td {
+    border: 1px solid black;
+  }
+
+  .calendar th {
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .calendar td {
+    width: 75px;
+    height: 75px;
+    padding: 10px 0px 0px 5px;
+  }
+
+  .month {
+    font-size: 25px;
+  }
+
+  .date {
+    font-size: 16px;
+  }
+  
+  @media only screen and (max-device-width: 480px) {
+    /* styles for small screens*/
+    .content-section {
+      width: 90%;
+      margin: 0 auto;
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+
+    .page-footer {
+        display: none;
+      }
+  }

@@ -1,0 +1,9 @@
+{% extends 'booking/base.html' %}
+
+{% block content %}
+<div class="col-md-12 text-center">
+	<a class="btn btn-outline-info mb-4" href="{% url 'calendar' %}?{{ prev_month }}"> Previous Month </a>
+	<a class="btn btn-outline-info mb-4" href="{% url 'calendar' %}?{{ next_month }}"> Next Month </a>
+</div>
+{% autoescape off %}{{ calendar }}{% endautoescape %}
+{% endblock %}
