@@ -20,7 +20,7 @@ class PostListView(ListView):
     template_name = 'booking/home.html'
     context_object_name = 'posts'
     ordering = ['-date_posted']
-    paginate_by = 3
+    paginate_by = 2
 
 
 class PostDetailView(DetailView):
@@ -33,8 +33,8 @@ class PostCreateView(LoginRequiredMixin, CreateView):
 
     def get_form(self):
         form = super().get_form()
-        form.fields['start_date']
-        form.fields['end_date']
+        form.fields['start_date'].widget = DatePickerInput()
+        form.fields['end_date'].widget = DatePickerInput()
         return form
 
     def form_valid(self, form):
@@ -48,8 +48,8 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
     def get_form(self):
         form = super().get_form()
-        form.fields['start_date']
-        form.fields['end_date']
+        form.fields['start_date'].widget = DatePickerInput()
+        form.fields['end_date'].widget = DatePickerInput()
         return form
 
     def form_valid(self, form):
