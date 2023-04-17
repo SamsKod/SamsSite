@@ -118,7 +118,7 @@ body {
     font-size: 16px;
   }
 
-  @media only screen and (max-device-width: 480px) {
+  @media only screen and (max-width: 480px) {
     /* styles for small screens*/
     .content-section {
       width: 90%;
@@ -147,6 +147,11 @@ body {
     .form-group {
       margin-top: 20px;
       overflow-wrap: break-word;
+    }
+
+    .img {
+      width: 90px;
+      height: 50px;
     }
   }
 
@@ -181,11 +186,7 @@ body {
     }
 
     .img {
-        width: 100px;
+        width: 90px;
         height: 50px;
     }
-  }
-  
-  /* adjust styles for screens larger than 992px */
-  @media (min-width: 992px) {
   }

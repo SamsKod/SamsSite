@@ -65,24 +65,37 @@ Here you can add name and email address to join a group training session and inf
 
 ![Screenshot](assets/images/FormScreenshot.png)
 
-Here you can add name and email address to join a group training session and information on what level you are and which distances you prefer.
+A form to sign in with username and password.
 
 
 ## Features left to implement
 - Change password.
 - Improve Calendar view on how reservations is displayed.
+- Check if a room is already booked
 - Integrate with Slack channel
 
 
 # Testing
-Test is done manual on a coupledivices with different screens sizes.
+Test is done manual on browsers Chrome, Safari and Firefox. Responsiveness has been tested with browsers development tools. It is also tested on iPhone X and iPad Air.
+Users: Sam (Admin), Lisa and Kalle. Password: SummerOf69
+
+* Signed in with admin account Sam in Admin Page to register more test users and add profiles.
+* Tested navigation bar to see that all links worked correct.
+* Sign in as test user Lisa and made i new reservation.
+* As test user Lisa updated reservation with other dates and comments.
+* As test user Lisa deleted reservation.
+* As test user Lisa viewed profile and added a profile image.
+* As test user Lisa viewed others reservations and made sure update or delete button was not available.
+* 
+
+More automated test should be added.
 
 # Validator Testing
 
 ### HTML
-No errors were returned when passing through the official W3C validator
+No errors were returned when passing through the official W3C validator.
 ### CSS
-No errors were found when passing through the official (Jigsaw) validator
+No errors were found when passing through the official (Jigsaw) validator. Although there are still some css issues to handle because different browsers render css in different ways. Chrome works best for this application. 
 ### Accessibility
 The Lighthouse test tool show good result in accesibility
 ![Screenshot](assets/images/LighthouseTest_img.png)
@@ -99,9 +112,10 @@ The live link can be found here - [(https://samsite.herokuapp.com/)](https://sam
 # Credits
 Example code and design is used from:
 - Code Institute 
-
-# Content
-
+- Corey Schaffer
+- Hui Wen
+- Read the Docs
+- Django, Bootstrap documentation
 
 # Media
 Is my own photos.
