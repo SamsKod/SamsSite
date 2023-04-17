@@ -1,7 +1,7 @@
 
-# Ride A Bike
+# Summerhouse reservation
 
-Ride A Bike is a site that hopes to help keep people motivated to meet up for cycle training in Norra Sorunda, south of Stockholm. The site will be targeted toward cyclist who are looking for a way to socialise, enjoy new routes and train recreational bike rides in a group.
+Summerhouse reservation is an app for my family to make reservations of our summerhouse we share on the Swedish west coast. This is a first mvp (minimum viable product) which I belive will fullfill our basic need for making plans for our holidays in the summerhouse. But of course there are features to add in the future. Because it will only be used by my family I don't want anyone make an account by them self and they must sign in to enter. Account must be set up by Admin. For this demo it is open for anonymous and there is also 3 accounts in place for testing.
 
 
 ![Screenshot](assets/images/RideaBikeScreenshot.png)
@@ -9,17 +9,31 @@ Ride A Bike is a site that hopes to help keep people motivated to meet up for cy
 # Features
 
 ## Existing Features
+* Home page
+  * Navigation Bar
+  * List of all reservations.
+  * If signed in a link to reservation form.
+* About page
+  * Short description for my family members.
+* Calendar page
+  * Calendar view to see all reservations.  
+* Profile link
+  * If signed in a link to the profile form.
+* Sign In link
+  * Link to sign in form.
+* Sign out link
+  * If signed in a link to sign out.
 
 ### Navigation Bar
 
 ![MenuScreenshot](assets/images/MenuScreenshot.png)
 
-- Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, About and Sign up page and is identical in each page to allow for easy navigation.
+- Featured on all pages, the full responsive navigation bar includes links to the Logo, Home page, About and Sign up page and is identical in each page to allow for easy navigation.
 - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
 
-### The landing page image
+### The landing page
 
-![IndexScreenshot](assets/images/IndexScreenshot.png)
+![HomeScreenshot](assets/images/IndexScreenshot.png)
 
 The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to.
 
@@ -29,18 +43,39 @@ The landing includes a photograph with text overlay to allow the user to see exa
 
 The about page gives information about ability to bicycle train in a group and where and when the training starts. 
 
-### The sign up page
+### The calendar page
 
 ![Screenshot](assets/images/FormScreenshot.png)
 
 Here you can add name and email address to join a group training session and information on what level you are and which distances you prefer.
 
+### The sign in page
+
+![Screenshot](assets/images/FormScreenshot.png)
+
+Here you can add name and email address to join a group training session and information on what level you are and which distances you prefer.
+
+### The sign in page
+
+![Screenshot](assets/images/FormScreenshot.png)
+
+Here you can add name and email address to join a group training session and information on what level you are and which distances you prefer.
+
+### The sign in page
+
+![Screenshot](assets/images/FormScreenshot.png)
+
+Here you can add name and email address to join a group training session and information on what level you are and which distances you prefer.
+
+
 ## Features left to implement
-- Blog on race biking in general and more specific show the different routes.
-- A menu from the Café 
+- Change password.
+- Improve Calendar view on how reservations is displayed.
+- Integrate with Slack channel
+
 
 # Testing
-Test is done manual on different divices with different screens sizes.
+Test is done manual on a coupledivices with different screens sizes.
 
 # Validator Testing
 
@@ -51,21 +86,22 @@ No errors were found when passing through the official (Jigsaw) validator
 ### Accessibility
 The Lighthouse test tool show good result in accesibility
 ![Screenshot](assets/images/LighthouseTest_img.png)
+
 # Deployment
-The site was deployed to GitHub pages. The steps to deploy are as follows:
-In the GitHub repository, navigate to the Settings tab
-From the source section drop-down menu, select the Master Branch
-Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-The live link can be found here - https://samskod.github.io/ride-a-bike/index.html
+The site was deployed Heroku with a Postgres database on ElephantSQL cloud service and static files is handled by cloud service Cloudinary.
+App is deployed as follows:
+* Heroku is connected to GitHub repository Samssite.
+* Under settings in Heroku config vars is set for connection to the Elephant and Cloudinary. Port and Django secret key is also set.
+* In deploy section in Heroku choose branch main to deploy and press button "Deploy Branch". Look in the log that everything is installed correct.
+
+The live link can be found here - [(https://samsite.herokuapp.com/)](https://samsite.herokuapp.com/)
 
 # Credits
 Example code and design is used from:
-- Code Institute Love Running project
-- Code Institute Coders Coffeeshop example
-- Free frontend https://freefrontend.com
+- Code Institute 
 
 # Content
-The icons in the lists were taken from Font Awesome
+
 
 # Media
-Background image was taken from Pexel.
+Is my own photos.
