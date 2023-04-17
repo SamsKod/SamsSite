@@ -3,7 +3,7 @@ body {
     color: #333333;
     margin-top: 5rem;
     position: relative;
-  }
+}
     
   h1, h2, h3, h4, h5, h6 {
     color: #444444;
@@ -121,9 +121,6 @@ body {
   @media only screen and (max-width: 480px) {
     /* styles for small screens*/
 
-    .media.content-section {
-      display: block;
-    }
     .content-section {
       width: 90%;
       margin: 3px auto;
@@ -169,16 +166,16 @@ body {
   /* adjust styles for screens between 768px and 992px */
   @media (min-width: 481px) and (max-width: 991px) {
    
-    .content-section {
+  .content-section {
         width: 90%;
-        margin: 0 auto;
+        margin: 3px auto;
         padding: 5px 10px;
         font-size: 14px;
-    }
+  }
     
-    .account-heading {
+  .account-heading {
       font-size: 32px;
-    }
+  }
     
     .text-secondary {
       font-size: 16px;
@@ -194,8 +191,4 @@ body {
       overflow-wrap: break-word;
     }
 
-    .img {
-        width: 90px;
-        height: 50px;
-    }
   }
