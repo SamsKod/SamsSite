@@ -1,13 +1,17 @@
 
 # Summerhouse reservation
 
-Summerhouse reservation is an app for my family to make reservations of our summerhouse we share on the Swedish west coast. This is a first mvp (minimum viable product) which I belive will fullfill our basic need for making plans for our holidays in the summerhouse. But of course there are features to add in the future. Because it will only be used by my family I don't want anyone make an account by them self and they must sign in to enter. Account must be set up by Admin. For this demo it is open for anonymous and there is also 3 accounts in place for testing.
+Summerhouse reservation is an app for my family to make reservations of our summerhouse we share on the Swedish west coast. This is a first mvp (minimum viable product) which I belive will fullfill our basic need for making plans for our holidays in the summerhouse. But of course there are features to add in the future.
+Because it will only be used by my family I don't want anyone to be able to register for an account by them self. My family will have to sign in to enter. Account must be set up by Admin. For this demo it is open for anonymous to view posts and there is also 4 accounts in place for testing. 
 
-
-![Screenshot](assets/images/screenshot_air.png)
-
+### Small screens (iPhone 4)
 ![Screenshot](assets/images/screenshot_iphone4.png)
 
+### Middle large screens (iPad Air)
+![Screenshot](assets/images/screenshot_air.png)
+
+
+### Large screens (Desktop)
 ![HomeScreenshot](assets/images/screenshot_home.png)
 
 
@@ -30,7 +34,6 @@ Summerhouse reservation is an app for my family to make reservations of our summ
   * If signed in a link to sign out.
 
 ### Navigation Bar
-
 ![navbarscreenshot](assets/images/screenshot_navbar1.png)
 
 - Featured on all pages, the full responsive navigation bar includes links to the Logo, Home page, About, Calendar and Sign in page and is identical in each page to allow for easy navigation.
@@ -40,42 +43,52 @@ Summerhouse reservation is an app for my family to make reservations of our summ
 - Featured on all pages, but when signed in there are more links in the navigation bar. New reservation,  Profile and Sign Out.
 
 ### The landing page
-
 ![HomeScreenshot](assets/images/screenshot_home.png)
 
-The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to.
-
 ### The about page
-
 ![Screenshot](assets/images/screenshot_about.png)
 
-The about page gives information about ability to bicycle train in a group and where and when the training starts. 
+The about page gives information about our wonderful summerplace. 
 
 ### The calendar page
-
 ![Screenshot](assets/images/screenshot_cal.png)
 
-Here you can add name and email address to join a group training session and information on what level you are and which distances you prefer.
 
 ### The sign in page
-
 ![Screenshot](assets/images/screenshot_signin.png)
 
 ![Screenshot](assets/images/screenshot_signin_wrong.png)
 
-Here you can add name and email address to join a group training session and information on what level you are and which distances you prefer.
+### The signed out page
+![Screenshot](assets/images/screenshot_signout.png)
 
-### The sign in page
+### The reservation detail page
+![HomeScreenshot](assets/images/screenshot_new.png)
 
-![Screenshot](assets/images/screenshot_.png)
+### Signed In reservation detail page
+![HomeScreenshot](assets/images/screenshot_mypost.png)
 
-Here you can add name and email address to join a group training session and information on what level you are and which distances you prefer.
+### Delete reservation page
+![HomeScreenshot](assets/images/screenshot_delete.png)
 
-### The sign in page
+### Profile page
+![HomeScreenshot](assets/images/screenshot_profile.png)
 
-![HomeScreenshot](assets/images/screenshot_home.png)
+### Update profile page
+![HomeScreenshot](assets/images/screenshot_accountupdate.png)
 
-A form to sign in with username and password.
+### Admin page
+![HomeScreenshot](assets/images/screenshot_admin.png)
+
+## Starting point
+
+The idé was to build a booking app for my familys summerhouse. We are always having trouble to handle the planing for the summer holidays. We have tried to schedule who and when the in with personal calendars or shared documents so I thought a web app could help. I want it to be quit small and easy mvp. So I started with three scetches. Both Calender view and Profile was added on the way I was building and learning new things. 
+
+### Scetches
+
+![Screenshot](assets/images/scetch_home.png)
+![Screenshot](assets/images/scetch_home_signed_in.png)
+![Screenshot](assets/images/scetch_newpost.png)
 
 
 ## Features left to implement
@@ -124,11 +137,11 @@ No errors were returned when passing through the official W3C validator.
 No errors were found when passing through the official (Jigsaw) validator. Although there are still some css issues to handle because different browsers render css in different ways. Chrome works best for this application. 
 ### Accessibility
 The Lighthouse test tool show good result in accesibility
-![Screenshot](assets/images/LighthouseTest_img.png)
+![Screenshot](assets/images/screenshot_lighthouse.png)
 
 # Bugs
  * Styling bugs still exists on how different browsers render css.
- * 
+ * Home page needs to be adjusted on small screens like iPhone 4.
 
 # Deployment
 The site was deployed Heroku with a Postgres database on ElephantSQL cloud service and static files is handled by cloud service Cloudinary.
