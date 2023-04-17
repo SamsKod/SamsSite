@@ -4,7 +4,10 @@
 Summerhouse reservation is an app for my family to make reservations of our summerhouse we share on the Swedish west coast. This is a first mvp (minimum viable product) which I belive will fullfill our basic need for making plans for our holidays in the summerhouse. But of course there are features to add in the future. Because it will only be used by my family I don't want anyone make an account by them self and they must sign in to enter. Account must be set up by Admin. For this demo it is open for anonymous and there is also 3 accounts in place for testing.
 
 
-![Screenshot](assets/images/RideaBikeScreenshot.png)
+![Screenshot](assets/images/screenshot_air.png)
+
+![Screenshot](assets/images/screenshot_iphone4.png)
+
 
 # Features
 
