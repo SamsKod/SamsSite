@@ -2,7 +2,10 @@
 # Summerhouse reservation
 
 Summerhouse reservation is an app for my family to make reservations of our summerhouse we share on the Swedish west coast. This is a first mvp (minimum viable product) which I belive will fullfill our basic need for making plans for our holidays in the summerhouse. But of course there are features to add in the future.
-Because it will only be used by my family I don't want anyone to be able to register for an account by them self. My family will have to sign in to enter. Account must be set up by Admin. For this demo it is open for anonymous to view posts and there is also 4 accounts in place for testing. 
+Because it will only be used by my family I don't want anyone to be able to register for an account by them self. My family will have to sign in to enter. Account must be set up by Admin. 
+For this demo it is open for anonymous to view posts and there is also 4 accounts in place for testing.
+Users: Sam (Admin), Lisa, Kalle, Anna
+Password: SummerOf69
 
 ### Small screens (iPhone 4)
 ![Screenshot](assets/images/screenshot_iphone4.png)
@@ -37,10 +40,10 @@ Because it will only be used by my family I don't want anyone to be able to regi
 ![navbarscreenshot](assets/images/screenshot_navbar1.png)
 
 - Featured on all pages, the full responsive navigation bar includes links to the Logo, Home page, About, Calendar and Sign in page and is identical in each page to allow for easy navigation.
+- When signed in there are more links in the navigation bar. New reservation, Profile and Sign Out.
 
 ![navbarscreenshot](assets/images/screenshot_navbar2.png)
 
-- Featured on all pages, but when signed in there are more links in the navigation bar. New reservation,  Profile and Sign Out.
 
 ### The landing page
 ![HomeScreenshot](assets/images/screenshot_home.png)
@@ -63,6 +66,9 @@ The about page gives information about our wonderful summerplace.
 ![Screenshot](assets/images/screenshot_signout.png)
 
 ### The reservation detail page
+![HomeScreenshot](assets/images/screenshot_detail.png)
+
+### New reservation page
 ![HomeScreenshot](assets/images/screenshot_new.png)
 
 ### Signed In reservation detail page
@@ -82,7 +88,7 @@ The about page gives information about our wonderful summerplace.
 
 ## Starting point
 
-The idé was to build a booking app for my familys summerhouse. We are always having trouble to handle the planing for the summer holidays. We have tried to schedule who and when the in with personal calendars or shared documents so I thought a web app could help. I want it to be quit small and easy mvp. So I started with three scetches. Both Calender view and Profile was added on the way I was building and learning new things. 
+The idé was to build a booking app for my familys summerhouse. We are always having trouble to handle the planing for the summer holidays. We have tried to schedule who and when with personal calendars or shared documents, with no success so I thought a web app could help. This is small and easy mvp, but hopefully it can grow. I started with three scetches. Both Calender view and Profile was added on the way as I was building and learning new things. 
 
 ### Scetches
 
@@ -96,11 +102,13 @@ The idé was to build a booking app for my familys summerhouse. We are always ha
 - Improve Calendar view on how reservations is displayed.
 - Check if a room is already booked
 - Integrate with Slack channel
+- Todo 
+- Wiki
 
 
 # Testing
 Test is done manual on browsers Chrome, Safari and Firefox. Responsiveness has been tested with browsers development tools. It is also tested on iPhone X and iPad Air.
-Users: Sam (Admin), Lisa and Kalle. Password: SummerOf69
+Users: Sam (Admin), Lisa, Anna and Kalle. Password: SummerOf69
 
 * Sign in with admin account Sam in Admin Page (https://samsite.herokuapp.com/admin/) to register test users and add profiles.
   * Add new user - outcome: User Anna was created with password SummerOf69.
@@ -124,10 +132,8 @@ Users: Sam (Admin), Lisa and Kalle. Password: SummerOf69
 * Click on Profile link - outcome: Profile form appears. Here must the user add an email address and can upload a new profile image. When Update button is clicked a green message "Your account has been updated!" appears
 * Click on others reservations - outcome Reservation info is shown, but without update or delete button
 * Click on Calender link- outcome: Landed on Calender page with all reservations
-* In calendar click Previous or Next month - outcome: Page updates with previous or next month dates
+* In Calendar page click Previous or Next month - outcome: Page updates with previous or next month dates
 
-
-Next move is to add automated test.
 
 # Validator Testing
 
@@ -161,4 +167,4 @@ Example code and design is used from:
 - Django, Bootstrap documentation
 
 # Media
-Is my own photos.
+My photos.
