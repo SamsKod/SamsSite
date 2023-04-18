@@ -1,194 +1,194 @@
 body {
-    background: #fafafa;
-    color: #333333;
-    margin-top: 5rem;
-    position: relative;
+  background: #fafafa;
+  color: #333333;
+  margin-top: 5rem;
+  position: relative;
 }
     
-  h1, h2, h3, h4, h5, h6 {
-    color: #444444;
-  }
-    
-   ul {
-    margin: 0;
-    height: 100%;
-    padding: 0px 5px 0px 5px;
-  } 
-    
-  .bg-steel {
-    background-color: #1090eb;
-  }
-    
-  .site-header .navbar-nav .nav-link {
-    color: #cbd5db;
-  }
-    
-  .site-header .navbar-nav .nav-link:hover {
-    color: #ffffff;
-  }
-    
-  .site-header .navbar-nav .nav-link.active {
-    font-weight: 500;
-  }
-    
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+  
+ul {
+  margin: 0;
+  height: 100%;
+  padding: 0px 5px 0px 5px;
+} 
+  
+.bg-steel {
+  background-color: #1090eb;
+}
+  
+.site-header .navbar-nav .nav-link {
+  color: #cbd5db;
+}
+  
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+  
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+  
+.content-section {
+  width: 75%;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  color: #444444;
+}
+  
+a.article-title:hover {
+  color: #becad6;
+  text-decoration: none;
+}
+  
+.article-content {
+  white-space: pre-line;
+}
+  
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+  
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3
+}
+  
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+  
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+  
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+  
+.account-heading {
+  font-size: 2.5rem;
+}
+
+.calendar {
+  width: 75%;
+  margin: auto;
+  font-size: 13px;
+}
+
+.calendar tr, .calendar td {
+  border: 1px solid black;
+}
+
+.calendar th {
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.calendar td {
+  width: 75px;
+  height: 75px;
+  padding: 10px 0px 0px 5px;
+}
+
+.month {
+  font-size: 25px;
+}
+
+.date {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 480px) {
+  /* styles for small screens*/
+
   .content-section {
-    width: 75%;
-    margin: 0 auto;
-    background: #ffffff;
-    padding: 10px 20px;
-    border: 1px solid #dddddd;
-    border-radius: 3px;
-    margin-bottom: 20px;
+    width: 90%;
+    margin: 3px auto;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .page-footer {
+    display: none;
+  }
+
+  .about {
+    width: 400px;
+  }  
+  
+  .account-heading {
+    font-size: 24px;
   }
   
-  .article-title {
-    color: #444444;
+  .text-secondary {
+    font-size: 14px;
   }
-    
-  a.article-title:hover {
-    color: #becad6;
-    text-decoration: none;
-  }
-    
-  .article-content {
-    white-space: pre-line;
-  }
-    
-  .article-img {
-    height: 65px;
-    width: 65px;
-    margin-right: 16px;
-  }
-    
-  .article-metadata {
-    padding-bottom: 1px;
-    margin-bottom: 4px;
-    border-bottom: 1px solid #e3e3e3
-  }
-    
-  .article-metadata a:hover {
-    color: #333;
-    text-decoration: none;
-  }
-    
-  .article-svg {
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
-  }
-    
+  
   .account-img {
-    height: 125px;
-    width: 125px;
-    margin-right: 20px;
-    margin-bottom: 16px;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .form-group {
+    margin-top: 20px;
+    overflow-wrap: break-word;
+  }
+
+  img {
+    width: 390px;
+    height: auto;
+
+  }
+}
+
+
+
+/* adjust styles for screens between 768px and 992px */
+@media (min-width: 481px) and (max-width: 991px) {
+  
+  .content-section {
+    width: 90%;
+    margin: 3px auto;
+    padding: 5px 10px;
+    font-size: 14px;
   }
     
   .account-heading {
-    font-size: 2.5rem;
+    font-size: 32px;
   }
   
-  .calendar {
-    width: 75%;
-    margin: auto;
-    font-size: 13px;
-  }
-
-  .calendar tr, .calendar td {
-    border: 1px solid black;
-  }
-
-  .calendar th {
-    padding: 10px;
-    text-align: center;
-    font-size: 18px;
-  }
-  
-  .calendar td {
-    width: 75px;
-    height: 75px;
-    padding: 10px 0px 0px 5px;
-  }
-
-  .month {
-    font-size: 25px;
-  }
-
-  .date {
+  .text-secondary {
     font-size: 16px;
   }
 
-  @media only screen and (max-width: 480px) {
-    /* styles for small screens*/
-
-    .content-section {
-      width: 90%;
-      margin: 3px auto;
-      padding: 5px 10px;
-      font-size: 14px;
-    }
-
-    .page-footer {
-        display: none;
-    }
-
-    .about {
-        width: 400px;
-    }  
-    
-    .account-heading {
-      font-size: 24px;
-    }
-    
-    .text-secondary {
-      font-size: 14px;
-    }
-    
-    .account-img {
-      width: 80px;
-      height: 80px;
-    }
-    
-    .form-group {
-      margin-top: 20px;
-      overflow-wrap: break-word;
-    }
-
-    img {
-      width: 390px;
-      height: auto;
-
-    }
+  .account-img {
+    width: 100px;
+    height: 100px;
   }
 
+  .form-group {
+    margin-top: 30px;
+    overflow-wrap: break-word;
+  }
 
-  
-  /* adjust styles for screens between 768px and 992px */
-  @media (min-width: 481px) and (max-width: 991px) {
-   
-  .content-section {
-        width: 90%;
-        margin: 3px auto;
-        padding: 5px 10px;
-        font-size: 14px;
-  }
-    
-  .account-heading {
-      font-size: 32px;
-  }
-    
-    .text-secondary {
-      font-size: 16px;
-    }
-    
-    .account-img {
-      width: 100px;
-      height: 100px;
-    }
-    
-    .form-group {
-      margin-top: 30px;
-      overflow-wrap: break-word;
-    }
-
-  }
+}
