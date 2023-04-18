@@ -45,27 +45,26 @@ Password: SummerOf69
 ![navbarscreenshot](assets/images/screenshot_navbar2.png)
 
 
-### The landing page
+### Landing page
 ![HomeScreenshot](assets/images/screenshot_home.png)
 
-### The about page
+### About page
 ![Screenshot](assets/images/screenshot_about.png)
 
 The about page gives information about our wonderful summerplace. 
 
-### The calendar page
-![Screenshot](assets/images/screenshot_cal.png)
+### Calendar page
+![Screenshot](assets/images/screenshot_cal2.png)
 
-
-### The sign in page
+### Sign in page
 ![Screenshot](assets/images/screenshot_signin.png)
 
 ![Screenshot](assets/images/screenshot_signin_wrong.png)
 
-### The signed out page
+### Signed out page
 ![Screenshot](assets/images/screenshot_signout.png)
 
-### The reservation detail page
+### Reservation detail page
 ![HomeScreenshot](assets/images/screenshot_detail.png)
 
 ### New reservation page
@@ -88,7 +87,7 @@ The about page gives information about our wonderful summerplace.
 
 ## Starting point
 
-The idé was to build a booking app for my familys summerhouse. We are always having trouble to handle the planing for the summer holidays. We have tried to schedule who and when with personal calendars or shared documents, with no success so I thought a web app could help. This is small and easy mvp, but hopefully it can grow. I started with three scetches. Both Calender view and Profile was added on the way as I was building and learning new things. 
+The idé was to build a booking app for my familys summerhouse. We are always having trouble to handle the planing for the summer holidays. We have tried to schedule who and when with personal calendars or shared documents, with no success so I thought a web app could help. This is small and easy mvp, but hopefully it can grow. I started with three scetches. Both Calender view and Profile was added on the way as I was building and learning new things. I worked by the agile method and Github features for project and issues was used for handling user stories.
 
 ### Scetches
 
@@ -150,7 +149,7 @@ The Lighthouse test tool show good result in accesibility
  * Home page needs to be adjusted on small screens like iPhone 4.
 
 # Deployment
-The site was deployed Heroku with a Postgres database on ElephantSQL cloud service and static files is handled by cloud service Cloudinary.
+The site was deployed on Heroku cloud service with a Postgres database on ElephantSQL cloud service and static files is handled by cloud service Cloudinary.
 App is deployed as follows:
 * Heroku is connected to GitHub repository Samssite.
 * Under settings in Heroku config vars is set for connection to the Elephant and Cloudinary. Port and Django secret key is also set.
