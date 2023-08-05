@@ -8,10 +8,10 @@ from django.views.generic import (
     DeleteView
 )
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required, user_passes_test
 from datetime import datetime, timedelta, date
 from bootstrap_datepicker_plus.widgets import DatePickerInput
-from .forms import UserUpdateForm, ProfileUpdateForm
+from .forms import UserUpdateForm, ProfileUpdateForm, UserRegisterForm
 from .models import Post
 from .utils import Calendar
 import calendar
@@ -119,7 +119,6 @@ def next_month(d):
     return month
 
 
-
 @login_required
 def profile(request):
     if request.method == 'POST':
@@ -143,3 +142,17 @@ def profile(request):
     }
 
     return render(request, 'booking/profile.html', context)
+
+
+@user_passes_test(lambda u: u.is_superuser)
+def register(request):
+    if request.method == 'POST':
+        form = UserRegisterForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            messages.success(request, f'Account created for {username}!')
+            return redirect('register')
+    else:
+        form = UserRegisterForm()
+    return render(request, 'booking/register.html', {'form': form})

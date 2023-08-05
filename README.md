@@ -118,7 +118,7 @@ Users: Sam (Admin), Lisa, Anna and Kalle. Password: SummerOf69
 * Click on link Home - outcome: Landed on Home page, https://samsite.herokuapp.com/ with the two newest booking shown. If more then  two reservation exist pageing buttons appear under the two bookings
 * Click on link Sign In - outcome: Landed on Sign in form, https://samsite.herokuapp.com/signin
 
-### As test user Anna: 
+### As test user Anna:
 * Sign in with username Anna and no password - outcome: Field message pops up, "Please fill in this field"
 * Sign in with username Anna and wrong password - outcome: A message in red appears, "Please enter a correct username and password. Note that both fields may be case-sensitive."
 * Sign in with username Anna and right password - outcome: Landing back to home page. New reservation and Profile link appears in the navigation bar.
@@ -160,7 +160,7 @@ The live link can be found here - [(https://samsite.herokuapp.com/)](https://sam
 # Credits
 Example code and design is used from:
 - Code Institute 
-- Corey Schaffer
+- Corey Schafer
 - Hui Wen
 - Read the Docs
 - Django, Bootstrap documentation
