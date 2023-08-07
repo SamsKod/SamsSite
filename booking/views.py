@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic import (
     ListView,
     DetailView,
@@ -29,9 +30,10 @@ class PostDetailView(DetailView):
     model = Post
 
 
-class PostCreateView(LoginRequiredMixin, CreateView):
+class PostCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     model = Post
     fields = ['title', 'start_date', 'end_date', 'small_room', 'large_room', 'grand_room', 'comment']
+    success_message = "Your reservation has been submitted!"
 
     def get_form(self):
         form = super().get_form()
@@ -45,9 +47,10 @@ class PostCreateView(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
 
 
-class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, SuccessMessageMixin, UpdateView):
     model = Post
     fields = ['title', 'start_date', 'end_date', 'small_room', 'large_room', 'grand_room', 'comment']
+    success_message = "Your reservation has been updated!"
 
     def get_form(self):
         form = super().get_form()
@@ -67,12 +70,14 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         return False
 
 
-class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, SuccessMessageMixin, DeleteView):
     model = Post
     success_url = '/'
+    success_message = "Your reservation has been deleted!"
 
     def test_func(self):
         post = self.get_object()
+        messages.success(self.request, self.success_message)
         if self.request.user == post.author:
             return True
         return False
