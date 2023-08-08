@@ -75,13 +75,15 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, SuccessMessageMixi
     success_url = '/'
     success_message = "Your reservation has been deleted!"
 
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, self.success_message)
+        return super(PostDeleteView, self).delete(request, *args, **kwargs)
+
     def test_func(self):
         post = self.get_object()
-        messages.success(self.request, self.success_message)
         if self.request.user == post.author:
             return True
         return False
-
 
 def about(request):
     return render(request, 'booking/about.html', {'title': 'About'})
