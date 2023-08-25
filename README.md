@@ -2,7 +2,7 @@
 # Summerhouse reservation
 
 Summerhouse reservation is an app for my family to make reservations of our summerhouse we share on the Swedish west coast. This is a first mvp (minimum viable product) which I belive will fullfill our basic need for making plans for our holidays in the summerhouse. But of course there are features to add in the future.
-Because it will only be used by my family I don't want anyone to be able to register for an account by them self. My family will have to sign in to enter. Account must be set up by Admin. 
+It is only users with administrator access who can add new user accounts, because it will only be used by my family and I don't want anyone to be able to register for an account by them self.
 For this demo it is open for anonymous to view posts and there is also 4 accounts in place for testing.
 Users: Sam (Admin), Lisa, Kalle, Anna
 Password: SummerOf69
@@ -15,38 +15,42 @@ Password: SummerOf69
 
 
 ### Large screens (Desktop)
-![HomeScreenshot](assets/images/screenshot_home.png)
+![Screenshot](assets/images/screenshot_home.png)
 
 
 # Features
 
 ## Existing Features
 * Home page
-  * Navigation Bar
-  * List of all reservations.
-  * If signed in a link to reservation form.
+  - Navigation Bar
+  - List of all reservations.
+  - If signed in a link to reservation form.
 * About page
-  * Short description for my family members.
+  - Short description for my family members.
 * Calendar page
-  * Calendar view to see all reservations.  
+  - Calendar view to see all reservations.  
 * Profile link
-  * If signed in a link to the profile form.
+  - If signed in a link to the profile form.
 * Sign In link
-  * Link to sign in form.
+  - Link to sign in form.
 * Sign out link
-  * If signed in a link to sign out.
+  - If signed in a link to sign out.
+* Create new user link
+  - If sign in as Admin a link to create new user form.
 
 ### Navigation Bar
 ![navbarscreenshot](assets/images/screenshot_navbar1.png)
 
 - Featured on all pages, the full responsive navigation bar includes links to the Logo, Home page, About, Calendar and Sign in page and is identical in each page to allow for easy navigation.
 - When signed in there are more links in the navigation bar. New reservation, Profile and Sign Out.
+- When signed in as Admin there is a link in the navigation bar to create new user.
 
 ![navbarscreenshot](assets/images/screenshot_navbar2.png)
 
+![navbarscreenshot](assets/images/screenshot_navbar3.png)
 
 ### Landing page
-![HomeScreenshot](assets/images/screenshot_home.png)
+![Screenshot](assets/images/screenshot_home.png)
 
 ### About page
 ![Screenshot](assets/images/screenshot_about.png)
@@ -65,25 +69,28 @@ The about page gives information about our wonderful summerplace.
 ![Screenshot](assets/images/screenshot_signout.png)
 
 ### Reservation detail page
-![HomeScreenshot](assets/images/screenshot_detail.png)
+![Screenshot](assets/images/screenshot_detail.png)
 
 ### New reservation page
-![HomeScreenshot](assets/images/screenshot_new.png)
+![Screenshot](assets/images/screenshot_new.png)
 
 ### Signed In reservation detail page
-![HomeScreenshot](assets/images/screenshot_mypost.png)
+![Screenshot](assets/images/screenshot_mypost.png)
 
 ### Delete reservation page
-![HomeScreenshot](assets/images/screenshot_delete.png)
+![Screenshot](assets/images/screenshot_delete.png)
 
 ### Profile page
-![HomeScreenshot](assets/images/screenshot_profile.png)
+![Screenshot](assets/images/screenshot_profile.png)
 
 ### Update profile page
-![HomeScreenshot](assets/images/screenshot_accountupdate.png)
+![Screenshot](assets/images/screenshot_accountupdate.png)
+
+### New user page
+![Screenshot](assets/images/screenshot_newuser.png)
 
 ### Admin page
-![HomeScreenshot](assets/images/screenshot_admin.png)
+![Screenshot](assets/images/screenshot_admin.png)
 
 ## Starting point
 
@@ -132,6 +139,13 @@ Users: Sam (Admin), Lisa, Anna and Kalle. Password: SummerOf69
 * Click on others reservations - outcome Reservation info is shown, but without update or delete button
 * Click on Calender link- outcome: Landed on Calender page with all reservations
 * In Calendar page click Previous or Next month - outcome: Page updates with previous or next month dates
+
+### As test user Sam (Admin):
+* Sign in as Sam with admin access - outcome: The navigation link New user is visable.
+* Click on link New user - Outcome: Open new user form.
+* Add new user - outcome: User Stina was created with password SummerOf69.
+  - a message shows if username already exist or a field is not filled in or if passwords is not matching.
+* Create profile for user Anna without choosing a profile image - outcome: A profile is created with a default profile image
 
 
 # Validator Testing
