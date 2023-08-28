@@ -7,11 +7,11 @@ For this demo it is open for anonymous to view posts and there is also 4 account
 Users: Sam (Admin), Lisa, Kalle, Anna
 Password: SummerOf69
 
-### Small screens (iPhone 4)
-![Screenshot](assets/images/screenshot_iphone4.png)
+### Small screens (iPhone)
+![Screenshot](assets/images/screenshot_iphone.png)
 
 ### Middle large screens (iPad Air)
-![Screenshot](assets/images/screenshot_air.png)
+![Screenshot](assets/images/screenshot_ipad.png)
 
 
 ### Large screens (Desktop)
@@ -43,10 +43,11 @@ Password: SummerOf69
 
 - Featured on all pages, the full responsive navigation bar includes links to the Logo, Home page, About, Calendar and Sign in page and is identical in each page to allow for easy navigation.
 - When signed in there are more links in the navigation bar. New reservation, Profile and Sign Out.
-- When signed in as Admin there is a link in the navigation bar to create new user.
 
 ![navbarscreenshot](assets/images/screenshot_navbar2.png)
 
+- When signed in as Admin there is a link in the navigation bar to create new user.
+- 
 ![navbarscreenshot](assets/images/screenshot_navbar3.png)
 
 ### Landing page
@@ -105,10 +106,11 @@ The idé was to build a booking app for my familys summerhouse. We are always ha
 
 ## Features left to implement
 - Change password.
-- Improve Calendar view on how reservations is displayed.
-- Check if a room is already booked
-- Integrate with Slack channel
-- Todo 
+- Improve Calendar page on how reservations is displayed.
+- Check if booking is in a past time period.
+- Check if a room is already booked.
+- Integrate with Slack channel.
+- Todo
 - Wiki
 
 
