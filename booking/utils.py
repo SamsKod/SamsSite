@@ -5,6 +5,7 @@ from .models import Post
 
 
 class Calendar(HTMLCalendar):
+    '''formats a day'''
     def __init__(self, year=None, month=None):
         self.year = year
         self.month = month
@@ -24,15 +25,15 @@ class Calendar(HTMLCalendar):
 
         return f"<td><span class='date'>{day}</span><ul> {d} </ul></td>"
 
-    # formats a week as a tr
+    '''formats a week as a tr'''
     def formatweek(self, theweek, post):
         week = ''
         for d, weekday in theweek:
             week += self.formatday(d, post)
         return f'<tr> {week} </tr>'
 
-    # formats a month as a table
-    # filter events by year and month
+    '''formats a month as a table
+    filter events by year and month'''
     def formatmonth(self, withyear=True):
         posts = Post.objects.filter(
             start_date__year=self.year, start_date__month=self.month)
