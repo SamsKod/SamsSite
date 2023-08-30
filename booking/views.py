@@ -32,7 +32,8 @@ class PostDetailView(DetailView):
 
 class PostCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     model = Post
-    fields = ['title', 'start_date', 'end_date', 'small_room', 'large_room', 'grand_room', 'comment']
+    fields = ['title', 'start_date', 'end_date',
+              'small_room', 'large_room', 'grand_room', 'comment']
     success_message = "Your reservation has been submitted!"
 
     def get_form(self):
@@ -47,9 +48,11 @@ class PostCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
         return super().form_valid(form)
 
 
-class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, SuccessMessageMixin, UpdateView):
+class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin,
+                     SuccessMessageMixin, UpdateView):
     model = Post
-    fields = ['title', 'start_date', 'end_date', 'small_room', 'large_room', 'grand_room', 'comment']
+    fields = ['title', 'start_date', 'end_date',
+              'small_room', 'large_room', 'grand_room', 'comment']
     success_message = "Your reservation has been updated!"
 
     def get_form(self):
@@ -70,7 +73,8 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, SuccessMessageMixi
         return False
 
 
-class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, SuccessMessageMixin, DeleteView):
+class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin,
+                     SuccessMessageMixin, DeleteView):
     model = Post
     success_url = '/'
     success_message = "Your reservation has been deleted!"
@@ -84,6 +88,7 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, SuccessMessageMixi
         if self.request.user == post.author:
             return True
         return False
+
 
 def about(request):
     return render(request, 'booking/about.html', {'title': 'About'})

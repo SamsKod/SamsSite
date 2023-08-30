@@ -25,10 +25,19 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('booking.urls')),
     path('profile/', user_views.profile, name='profile'),
-    path('signin/', auth_views.LoginView.as_view(template_name='booking/signin.html'), name='signin'),
-    path('signout/', auth_views.LogoutView.as_view(template_name='booking/signout.html'), name='signout'),
+    path(
+        'signin/', auth_views.LoginView.as_view(
+            template_name='booking/signin.html'),
+        name='signin'
+    ),
+    path(
+        'signout/', auth_views.LogoutView.as_view(
+            template_name='booking/signout.html'),
+        name='signout'
+    ),
     path('register/', user_views.register, name='register'),
 ]
 
 if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.MEDIA_URL,
+                          document_root=settings.MEDIA_ROOT)
